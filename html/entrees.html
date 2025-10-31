@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <title>La Granota | Entrées</title>
+  <link rel="stylesheet" href="/css/style.css?v=1">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="/Images/logo.jpg" alt="La Granota">
+      <span>La Granota</span>
+    </div>
+    <a href="/index.html" class="back-btn">← Retour au menu principal</a>
+  </header>
+
+  <!-- SECTION ENTRÉES -->
+  <section class="menu-page">
+    <div class="dessert-hero">
+      <img src="/Images/entree.jpeg" alt="Entrées La Granota" class="dessert-banner">
+      <div class="dessert-text">
+        <h2>Nos Entrées</h2>
+        <p>Découvrez nos délicieuses entrées en 3D</p>
+      </div>
+    </div>
+
+    <!-- Première entrée -->
+    <div class="plat">
+      <model-viewer 
+        src="/3D_Objects/burger_realistic_free.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        auto-rotate 
+        alt="Burger">
+      </model-viewer>
+      <div class="description">
+        <strong>Burger</strong><br>
+        Prix : 6 €<br>
+        Ingrédients : viande, fromage, salade, sauce
+      </div>
+    </div>
+
+    <!-- Deuxième entrée -->
+    <div class="plat">
+      <model-viewer 
+        src="/3D_Objects/lasagna.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        auto-rotate 
+        alt="Lasagna">
+      </model-viewer>
+      <div class="description">
+        <strong>Lasagna</strong><br>
+        Prix : 14 €<br>
+        Ingrédients : pâte, viande, fromage, tomate
+      </div>
+    </div>
+
+    <!-- Troisième entrée -->
+    <div class="plat">
+      <model-viewer 
+        src="/3D_Objects/sushi_scan.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        auto-rotate 
+        alt="Sushi">
+      </model-viewer>
+      <div class="description">
+        <strong>Sushi</strong><br>
+        Prix : 19 €<br>
+        Ingrédients : riz, saumon, algue
+      </div>
+    </div>
+
+    <!-- Quatrième entrée -->
+    <div class="plat">
+      <model-viewer 
+        src="/3D_Objects/pizza_realistic.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        auto-rotate 
+        alt="Pizza">
+      </model-viewer>
+      <div class="description">
+        <strong>Pizza</strong><br>
+        Prix : 21 €<br>
+        Ingrédients : pâte, sauce tomate, fromage
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 La Granota – Découvrez l’avenir de la gastronomie en 3D.</p>
+  </footer>
+</body>
+</html>

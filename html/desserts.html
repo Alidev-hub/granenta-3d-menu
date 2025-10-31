@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <title>La Granota | Desserts</title>
+  <link rel="stylesheet" href="/css/style.css?v=1">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="/Images/logo.jpg" alt="La Granota">
+      <span>La Granota</span>
+    </div>
+    <a href="/index.html" class="back-btn">← Retour au menu principal</a>
+  </header>
+
+  <!-- SECTION DESSERTS -->
+  <section class="menu-page">
+    <div class="dessert-hero">
+      <img src="/Images/dessert.jpeg" alt="Desserts La Granota" class="dessert-banner">
+      <div class="dessert-text">
+        <h2>Nos Desserts</h2>
+        <p>Découvrez nos délicieux desserts en 3D</p>
+      </div>
+    </div>
+
+    <!-- Premier dessert -->
+    <div class="plat">
+      <model-viewer 
+        src="/3D_Objects/chocolate_cookie_3d_scan.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        auto-rotate 
+        alt="Chocolate Cookie">
+      </model-viewer>
+      <div class="description">
+        <strong>Chocolate Cookie</strong><br>
+        Prix : 5 €<br>
+        Ingrédients : chocolat
+      </div>
+    </div>
+
+    <!-- Deuxième dessert -->
+    <div class="plat">
+      <model-viewer 
+        src="/3D_Objects/creme_brulee.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        auto-rotate 
+        alt="Crème Brûlée">
+      </model-viewer>
+      <div class="description">
+        <strong>Crème Brûlée</strong><br>
+        Prix : 5 €<br>
+        Ingrédients : crème
+      </div>
+    </div>
+
+    <!-- Troisième dessert -->
+    <div class="plat">
+      <model-viewer 
+        src="/3D_Objects/pancakes_low_poly_model.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        auto-rotate 
+        alt="Pancakes">
+      </model-viewer>
+      <div class="description">
+        <strong>Pancakes</strong><br>
+        Prix : 5 €<br>
+        Ingrédients : pancakes
+      </div>
+    </div>
+
+    <!-- Quatrième dessert -->
+    <div class="plat">
+      <model-viewer 
+        src="/3D_Objects/stylized_caramel_pudding.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        auto-rotate 
+        alt="Caramel Pudding">
+      </model-viewer>
+      <div class="description">
+        <strong>Caramel Pudding</strong><br>
+        Prix : 5 €<br>
+        Ingrédients : caramel
+      </div>
+    </div>  
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 La Granota – Découvrez l’avenir de la gastronomie en 3D.</p>
+  </footer>
+</body>
+</html>
