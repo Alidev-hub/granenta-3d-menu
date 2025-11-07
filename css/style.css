@@ -55,7 +55,7 @@ header {
 ======================== */
 .hero {
   position: relative;
-  height: 60vh;
+  height: 40vh;
   background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -148,6 +148,13 @@ header {
   font-weight: 500;
   color: var(--green-main);
 }
+
+.card-link {
+  text-decoration: none;     /* pas de soulignement */
+  color: inherit;            /* garde la même couleur du texte */
+  display: block;            /* pour que le lien occupe toute la zone */
+}
+
 
 /* ========================
    🌿 PAGE MENU DÉTAILLÉE
